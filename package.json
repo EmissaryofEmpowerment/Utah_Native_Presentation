@@ -1,0 +1,20 @@
+{
+  "name": "utah_native_presentation",
+  "version": "1.0.0",
+  "description": "Presentation About Native Tribes in Utah",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "npm start ./server/ && ..npm start ./client/ "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmissaryofEmpowerment/Utah_Native_Presentation.git"
+  },
+  "author": "Ryan Armstrong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmissaryofEmpowerment/Utah_Native_Presentation/issues"
+  },
+  "homepage": "https://github.com/EmissaryofEmpowerment/Utah_Native_Presentation#readme"
+}

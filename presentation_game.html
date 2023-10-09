@@ -6,23 +6,25 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Utah Native Presentation</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <title>Utah Native Presentation</title>      
         <script src="presentation_game.js"></script>
+        <style type="text/css">
+        .tribe{
+            border: red solid 3px;
+            min-height:80px;
+            min-width:80px;
+            font-size:30px;
+            margin-left:80px;
+        }
+        #buttons{            
+            font-weight:bold;
+        }
+        </style>
     </head>
-    <body>
-      <div id="content"></div>
-      <img src="nativelands-map.jpg"/>
-      <div id="buttons">
-          <button id="tribe0">Shoshone</button>
-          <button id="tribe1">Ute</button>
-          <button id="tribe2">Navajo</button>
-          <button id="tribe3">Goshute</button>
-          <button id="tribe4">Paiute</button>
-      </div>
+    <body>      
+      <h1 id="intro"> Utah Native Presentation</h1>
+        <h2 id="content"></h2>
+      <div id="buttons"></div>
         
     </body>
 </html>
