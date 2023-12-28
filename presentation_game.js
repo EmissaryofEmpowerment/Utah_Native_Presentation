@@ -47,13 +47,11 @@ const load_tribe_img = (cnt) => {
 
 const load_nation_img = (cnt) => {
         cnt.innerHTML = "<img src='nativelands-tribes_names.jpg'/>";        
-        alert("Made it to load_nation");
         load_nation_btns();
     };
 
 
     const ntn_button_click = (w,q) => {
-        alert("entered ntn_button_click");
          let cnt = document.getElementById("content");
          let ntn_img =   tribe_lands[tribes_guessed[w]][q];       
         localStorage.setItem(ntn_img, 'true');
@@ -93,11 +91,11 @@ const load_nation_img = (cnt) => {
     
     const pre_load_btns = ()=>{
         let resetButton = document.getElementById("reset");
-        if (resetButton.innerHTML.includes("Reset vars")){
+        if (resetButton.innerHTML.includes("Reset Program")){
             
         }
         else {
-        resetButton.innerHTML += "<button id='reset'>Reset vars</button><br/>";        
+        resetButton.innerHTML += "<button id='reset'>Reset Program</button><br/>";        
         resetButton.addEventListener("click", reset);
         }
         let btns = document.getElementById("buttons");
@@ -107,7 +105,6 @@ const load_nation_img = (cnt) => {
     }
     
     const load_nation_btns = ()=>{
-        alert("Made it to load_nation_btns");
         let lands = Object.keys(tribe_lands);
         let btns = pre_load_btns();
         for (let w = 0; w < lands.length; w++) {
